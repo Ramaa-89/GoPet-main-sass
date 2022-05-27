@@ -1,0 +1,19 @@
+
+@media only screen and (max-width: 600px) {
+    #contacto{
+        width: 98%;
+    }
+
+    #footer{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .carru-2{
+        display: none;
+    }
+    .carru-1{
+        display: block;
+    }
+}
