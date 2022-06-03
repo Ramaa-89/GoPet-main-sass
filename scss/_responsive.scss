@@ -1,19 +1,18 @@
+$desktop: 1400px;
+$tablet: 768px;
+$mobile: 425px;
 
-@media only screen and (max-width: 600px) {
-    #contacto{
-        width: 98%;
-    }
-
-    #footer{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .carru-2{
-        display: none;
-    }
-    .carru-1{
-        display: block;
-    }
-}
+@mixin responsive ($medida) {
+    @if $medida == desktop {
+        @media (max-width: $desktop) {
+            @content;
+        }
+    }@else if $medida == tablet {
+        @media (max-width: $tablet) {
+            @content;
+        }
+    }@else if $medida == mobile {
+        @media (max-width: $mobile) {
+            @content;
+        }
+    }}

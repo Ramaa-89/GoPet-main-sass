@@ -1,0 +1,24 @@
+$anchoProductos: 200px;
+
+$violeta: rgb(135, 80, 170);
+$verde: rgb(72, 185, 121);
+
+$boton:(
+    color: $violeta,
+    radio: 10px,
+    espacio: 10px,
+    texto: rgb(255, 255, 255),
+    borde:0,
+    margen: 20px,
+);
+
+$logos:(
+    marca: 80px,
+    redes: 40px,
+);
+
+@each $elemento, $ancho in $logos{
+    .logo--#{$elemento} {
+        width: $ancho;
+    }
+}
