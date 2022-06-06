@@ -67,31 +67,37 @@
             <fieldset>
                 <legend>Dejanos tu consulta</legend>
 
-                <label for="nombre">Nombre:</label>
-                <input class="campo"type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
-                <br><br>
-                <label for="apellido">Apellido:</label>
-                <input class="campo"type="text" id="apellido" name="apellido" placeholder="Ingresá tu apellido" required>
-                <br><br>
-                <label for="email">Email:</label>
-                <input class="campo"type="email" id="email" name="email" placeholder="Ingresá tu email" required>
-                <br><br>
-                <label>¿Que mascota tenés?</label><br><br>
-                    <input type="radio" name="mascota" value="perro"/>
-                    <label >Perro</label>
-                    <input type="radio" name="mascota" value="gato"/>
-                    <label>Gato</label>
-                    <input type="radio" name="mascota" value="gato"/>
-                    <label>Otro</label>
-                <br><br>
-                <label id="edad">Edad:</label>
-                <select placeholder="seleccioná la edad">
-                    <option>Cachorro</option>
-                    <option>Adulto</option>
-                    <option>Adulto +7</option>
-                </select>
-                <br><br>
-                <textarea type="text-area" placeholder="Escribí tu consulta aquí" value=""></textarea>
+                <div class="form-floating mb-3">
+                    <input type="campo" class="form-control" id="floatingInput" placeholder="Nombre">
+                    <label for="floatingInput">Nombre</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="campo" class="form-control" id="floatingInput" placeholder="Apellido">
+                    <label for="floatingInput">Apellido</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="">
+                    <label class="btn btn-outline-primary" for="btnradio1">Perro</label>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked="">
+                    <label class="btn btn-outline-primary" for="btnradio2">Gato</label>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked="">
+                    <label class="btn btn-outline-primary" for="btnradio3">Otro</label>
+                  </div>
+                  <br><br>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Edad de tu Mascota</option>
+                    <option value="1">Cachorro</option>
+                    <option value="2">Adulto</option>
+                    <option value="3">Adulto +7</option>
+                  </select>
+                  <div class="form-group">
+                    <label for="exampleTextarea" class="form-label mt-4"></label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3" style="height: 126px;"></textarea>
+                  </div>
                 <br><br>
                 <button class="btn btn-primary" type="submit" value="Enviar">Enviar</button>
                 <button class="btn btn-primary" type="reset" value="Borrar">Borrar</button>  
