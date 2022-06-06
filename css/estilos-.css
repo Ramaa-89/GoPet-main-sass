@@ -224,7 +224,7 @@ nav {
     nav .navbar-nav .form-inline label {
       color: #d9d9d9 !important; }
     nav .navbar-nav .form-inline .search-field {
-      display: inline-block;
+      display: block;
       width: 60%;
       background: none;
       border: none;
@@ -320,7 +320,7 @@ h3, h4 {
     background-color: #48b979; }
 
 /* FOOTER */
-footer {
+#footer {
   background: #8750aa;
   background: linear-gradient(90deg, #8750aa 44%, #c28de4 98%);
   width: 100%;
@@ -329,28 +329,28 @@ footer {
   grid-area: footer;
   bottom: 0;
   position: sticky; }
-  footer div {
+  #footer div {
     padding: 30px; }
-  footer .redes img {
+  #footer .redes img {
     width: 40px; }
-  footer img {
+  #footer img {
     width: 80px; }
-  footer p {
+  #footer p {
     color: white;
     padding-top: 10px; }
   @media (max-width: 425px) {
-    footer {
+    #footer {
       display: flex;
       justify-content: space-around;
       flex-direction: column-reverse;
       align-items: center;
       padding: 2px;
       z-index: 1000; }
-      footer .logo--marca {
+      #footer .logo--marca {
         display: none; }
-      footer .redes {
+      #footer .redes {
         padding-top: 5px; }
-      footer div {
+      #footer div {
         padding: 0; } }
 
 /* SLIDER */
