@@ -406,7 +406,7 @@ h3, h4{
             }
         }
         @include responsive(celular){
-            display: none;
+            //display: none;
         }
     }
 }
