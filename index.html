@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://www.gopet.com/ ">
     <meta property="og:site_name" content="goPet Shop Online">
     <meta property="og:description" content="goPet Shop en Argentina. La forma más sencilla y rápida de comprar productos de las mejores marcas para tu mascota. Envíos a domicilio. ">
-
+    
     <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
     
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
@@ -28,44 +28,51 @@
     <link rel="stylesheet" href="./css/estilos-.css" type="text/css">
 </head>
 <body>
+    <header>
+        <!-- Empieza el menú superior -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand col-2" href="./index.html">
+                    <img class=""src="./images/logo1.png" alt="">
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav col-xl-10">
+                    <ul class="navbar-nav col-sm-12">
+                        <li class="nav-item">
+                          <a class="nav-link text-light" aria-current="page" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item d-none d-md-block text-white-70">
+                          <a class="nav-link disabled">CallVet <i class="fa-solid fa-phone"></i></a>
+                        </li>
+                        <li class="nav-item d-block d-sm-block d-md-none text-light">
+                          <a href="tel:1164116862;" class="nav-link">CallVet <i class="fa-solid fa-phone"></i></a>
+                        </li>  
+                      </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
 
-<header>
-<!-- Empieza el menú de Navegación -->
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand col-3" href="./index.html">
-            <img src="./images/logo1.png" alt="">
-          </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav col-xl-9">
-            <ul class="navbar-nav col-sm-12">
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item d-none d-md-block">
-                  <a class="nav-link disabled">CallVet <i class="fa-solid fa-phone"></i></a>
-                </li>
-                <li class="nav-item d-block d-sm-block d-md-none">
-                  <a href="tel:1164116862;" class="nav-link">CallVet <i class="fa-solid fa-phone"></i></a>
-                </li>
-              </ul>
+    <section class="busqueda">
+        <div class="container">
+            <input type="text" placeholder="Buscar">
+            <div class="search"></div>
         </div>
-      </div>
-    </div>
-  </nav>
-</header>
+    </section>
+    
     
 <!-- Slider Desktop -->
 <section id="sliderHome" class="carru-1">    
@@ -274,7 +281,21 @@
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6575.659272725745!2d-58.529536976517335!3d-34.50720307193826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0f191dd3b97%3A0xec12755f4fd4ddf1!2sParan%C3%A1%203745%2C%20Mart%C3%ADnez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1650052988111!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
         </div>
         <div class="map2">
-            <img src="./images/favicon.jpg"><br><img src="./images/valor-perfil.png">
+            <img src="./images/favicon.jpg"><br>
+            <form class="valor">
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                  --><label for="radio1">★</label><!--
+                  --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                  --><label for="radio2">★</label><!--
+                  --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                  --><label for="radio3">★</label><!--
+                  --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                  --><label for="radio4">★</label><!--
+                  --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                  --><label for="radio5">★</label>
+                </p>
+              </form>
             <ol>
                 <li>Profesional</li>
                 <li>Velocidad de respuesta</li>
