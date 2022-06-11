@@ -103,6 +103,43 @@ html{
     flex-wrap:wrap;
     gap:1.5rem;
 }
+.btn-group{
+    margin-bottom: 20px;
+    width: 100%;
+    @include responsive (tablet){
+        font-size: .5rem;
+    }
+}
+.btn-check{
+    color: azure;
+    &::after{
+        color: $verde;
+        border: solid 1px white;
+    }
+}
+.btn-outline-primary{
+    color:white;
+    
+    &::selection{
+        color: white;
+    }
+    &::after{
+        color: $verde;
+        border: solid 1px white;
+    }
+    @include responsive (tablet){
+        font-size: 1rem;
+    }
+    @include responsive (celular){
+        font-size: .53rem;
+    }
+}
+.btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
+    color: #fff;
+    background-color: $verde!important;
+    border-color: $violeta!important;
+}
+
 
 /* FORMULARIOS*/
 form{

@@ -135,6 +135,38 @@ html {
   flex-wrap: wrap;
   gap: 1.5rem; }
 
+.btn-group {
+  margin-bottom: 20px;
+  width: 100%; }
+  @media (max-width: 768px) {
+    .btn-group {
+      font-size: .5rem; } }
+
+.btn-check {
+  color: azure; }
+  .btn-check::after {
+    color: #48b979;
+    border: solid 1px white; }
+
+.btn-outline-primary {
+  color: white; }
+  .btn-outline-primary::selection {
+    color: white; }
+  .btn-outline-primary::after {
+    color: #48b979;
+    border: solid 1px white; }
+  @media (max-width: 768px) {
+    .btn-outline-primary {
+      font-size: 1rem; } }
+  @media (max-width: 425px) {
+    .btn-outline-primary {
+      font-size: .53rem; } }
+
+.btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
+  color: #fff;
+  background-color: #48b979 !important;
+  border-color: #8750aa !important; }
+
 /* FORMULARIOS*/
 form .campo {
   border: 0;
