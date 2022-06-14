@@ -224,6 +224,9 @@ form label {
   font-family: 'Oxygen', sans-serif;
   outline:none; }
 
+form input {
+    outline:none; }
+
 /* HEADER */
 header {
   /* background-color: rgba(136, 80, 170, 0.513);
