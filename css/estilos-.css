@@ -224,7 +224,7 @@ form label {
   font-family: 'Oxygen', sans-serif;
   outline:none; }
 
-form input {
+form input:focus {
     outline:none; }
 
 /* HEADER */
