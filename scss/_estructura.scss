@@ -46,7 +46,9 @@ html{
     @include responsive(celular){
         width: 98%;
     }
+    --bs-contacto-input-focus-border-color: none !important; 
 }
+
 /* SECCION NOSOTROS */ 
 
 #nosotros{

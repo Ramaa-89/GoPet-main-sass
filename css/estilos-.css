@@ -78,7 +78,8 @@ html {
   width: 50%;
   align-content: center;
   text-align: left;
-  background-color: white; }
+  background-color: white;
+  --bs-contacto-input-focus-border-color: none !important; }
   #contacto fieldset {
     padding: 5%;
     align-items: center; }
@@ -201,7 +202,7 @@ form .form-control {
   width: 100%; }
   form .form-control:focus {
     border-bottom: 2px solid #48b979;
-    border: 0; }
+    outline: none; }
 
 form textarea {
   border: 0;
@@ -237,11 +238,7 @@ form fieldset {
 
 form label {
   color: #414141;
-  font-family: 'Oxygen', sans-serif;
-  outline:none; }
-
-form input:focus {
-    outline:none; }
+  font-family: 'Oxygen', sans-serif; }
 
 /* HEADER */
 header {
