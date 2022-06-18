@@ -4,7 +4,7 @@
     padding:0;
 }
 html{
-    font-size:62,5%;    
+    font-size:62,5%;
 }
 /* SECCION CONTACTO*/
 .centrado{
@@ -51,14 +51,34 @@ html{
 
 #nosotros{
     .texto {
+        padding-top: 4%;
         padding-left:7%;
         padding-right:7%;
     }
     .head {
+        padding-top: 4%;
         img{
             width: 100%;
             height: auto;
           }
+    }
+    .accordion{
+        i{
+            padding-right: 20px;
+        }
+        --bs-accordion-active-color: white;
+        --bs-accordion-active-bg: $violeta !important;
+        --bs-accordion-btn-focus-border-color: none !important;  
+        .accordion-body{
+            a{
+                color:$violeta;
+                font-weight: bold;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        } 
     }
 } 
 /* SECCIONES PRODUCTOS */
@@ -672,4 +692,4 @@ h3, h4{
     "mapa mapa mapa"
     "footer footer footer";
   }
-
+  
